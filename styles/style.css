@@ -1,0 +1,54 @@
+
+
+/*ni font-face ni import funcionaron sin INSTALAR la font en la compu local... 
+¿qué sucede si hosteo la web?*/
+@font-face {
+  font-family: 'Pacifico';
+  src: url('fonts/Pacifico-Regular.ttf') format ('truetype');
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+.cajas
+  {
+    margin: 5px;
+
+
+    border-width: 3px;
+    border-style: dotted;
+    border-color: #389F85;
+    /* border: 1px solid #389F85;*/
+
+    border-radius: 10px 10px 90px 90px;
+
+    overflow: auto;
+
+    min-height: 50px;
+    min-width: 100px;
+
+    box-shadow: 5px 5px 10px black,
+                -2px -2px 10px red;
+  }
+
+.caja1 
+{
+  float: right;
+  font-family: 'Roboto', sans-serif;
+}
+.caja2
+{
+  float: right;
+  font-family: 'Pacifico', cursive;
+}
+
+.caja3
+{
+  float : left;
+  background: gray url("https://raw.githubusercontent.com/jlarata/DefiendeLatorre/main/Assets/Materials/Mortero.png")
+  no-repeat;
+  background-size: 50%;
+  background-position: 60%;
+  font-family: 'Pacifico', cursive;
+}
