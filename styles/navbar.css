@@ -1,0 +1,19 @@
+.navbar
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  background-color: var(--secondary-color);
+  /*border-width: 3px;
+  border-style: solid;
+  border-color: #151616;*/
+  border-radius: 10px;
+  margin-bottom: 5%;
+
+}
+
+.menu-bars
+{
+  min-height: 50px;
+}
