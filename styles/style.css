@@ -1,7 +1,11 @@
 
 
+
+@import url(reset.css);
 @import url(variables.css);
 @import url(navbar.css);
+@import url(hero.css);
+@import url(features.css);
 
 /*ni font-face ni import funcionaron sin INSTALAR la font en la compu local... 
 ¿qué sucede si hosteo la web?*/
@@ -63,7 +67,7 @@
 
 
 /*ponerle borde a las cosas*/
-/*.navbar, .menu-bars, .cajas, .caja1, .caja2, .caja3*/
+/*.navbar, .menu-bars, .cajas, .caja1, .caja2, .caja3, .logo-circle, .logo, .logo-wrapper, .hero
 {
-  border: solid 1px green;
-}
+  border: solid 0.01px green;
+}*/

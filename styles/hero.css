@@ -1,0 +1,103 @@
+
+.hero
+{
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.logo-wrapper
+{
+    position: relative;
+    /*background-color: rebeccapurple;*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 8rem;
+    margin-bottom: 1.5rem;
+}
+
+.logo 
+{
+    width: 110px;
+    height: auto;
+    padding: 1rem 0;
+    border-radius: 30% 30% 50% 50%;
+}
+
+.logo-circle 
+{
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    border-radius: 5% 5% 40% 40%;
+    transform: translate(0 -45%);
+}
+
+.hero-title
+{
+    font-size: 2rem;
+    max-width: 400px;
+    line-height: 125%;
+}
+
+
+
+.hero-content
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.hero-content > button
+{
+    background-color: var(--secondary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.left-floating
+{
+    width: 150px;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    z-index: -1;
+    transform: translate(-40%, 70%) rotate(5deg);
+    opacity: 0.7;
+}
+
+.right-floating
+{
+    width: 150px;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0;
+    z-index: -1;
+    transform: translate(40%, 40%) scaleX(-1) rotate(15deg);
+    opacity: 0.7;
+    
+}
+
+@media (min-width: 768px)
+{
+    .logo-wrapper
+    {
+        height: 6rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .logo-circle
+    {
+        padding: 1rem 0;
+        border-radius: 2%;
+    }
+    
+}

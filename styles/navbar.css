@@ -3,13 +3,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3px;
+  padding: 5px 20px;
   background-color: var(--secondary-color);
   /*border-width: 3px;
   border-style: solid;
   border-color: #151616;*/
   border-radius: 10px;
-  margin-bottom: 5%;
+  margin-bottom: 2rem;
 
 }
 

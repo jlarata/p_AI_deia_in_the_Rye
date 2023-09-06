@@ -1,0 +1,46 @@
+.feature
+{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    padding: 0 0.5rem;
+    
+}
+
+.feature > img
+{
+    width: 90%;
+    border-radius: 20px;
+    max-width: 450px;
+    /*aspect-ratio: 2/3;*/
+    object-fit: cover;
+    padding: 1rem;
+}
+
+.features-title
+{
+    font-size: 1.5rem;
+    line-height: 150%;
+    padding-bottom: 1rem;;
+}
+
+.features-text
+{
+    max-width: 800px;
+    line-height: 120%;
+}
+
+@media (min-width: 768px)
+{
+    .feature
+    {
+        padding: 0 1.5rem;
+    }
+    .features-wrapper
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
