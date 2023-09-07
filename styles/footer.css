@@ -30,3 +30,39 @@
     font-size: small;
     font-style: italic;
 }
+
+/*.footer-circle
+{
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    bottom: -120px;
+    z-index: -1;
+    background-color: var(--primary-color);
+    border-radius: 50% 50% 0 0;
+}*/
+
+.footer-floating
+{
+    position: absolute;
+    width: 120px;
+    height: auto;
+    left: 0;
+    z-index: -1;    
+    transform: scaleX(-1) rotate(15deg) translate(20%, 40%);
+    opacity: 0.7;
+}
+
+@media (min-width: 768px)
+{
+    .footer-floating
+{
+    position: absolute;
+    width: 120px;
+    height: auto;
+    left: 30%;
+    z-index: -1;    
+    transform: scaleX(-1) rotate(15deg) translate(20%, 40%);
+    opacity: 0.7;
+}
+}
