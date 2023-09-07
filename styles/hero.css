@@ -11,9 +11,11 @@
     /*background-color: rebeccapurple;*/
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    height: 8rem;
-    margin-bottom: 1.5rem;
+    align-items: center;
+    height: 9.5rem;
+    
+    
+    
 }
 
 .logo 
@@ -22,6 +24,20 @@
     height: auto;
     padding: 1rem 0;
     border-radius: 30% 30% 50% 50%;
+    opacity: 0.8;
+    transition: all;
+    transition-duration: 300ms;
+    z-index: 2;
+    
+    
+    
+}
+
+.logo:hover
+{
+    opacity: 1;
+    width: 120px;
+    box-shadow: 15px 15px 35px black;    
 }
 
 .logo-circle 
@@ -31,9 +47,10 @@
     height: 100%;
     position: absolute;
     top: 0;
-    z-index: -1;
+    /*z-index: -1;*/
     border-radius: 5% 5% 40% 40%;
     transform: translate(0 -45%);
+    
 }
 
 .hero-title
@@ -41,6 +58,20 @@
     font-size: 2rem;
     max-width: 400px;
     line-height: 125%;
+    transition: all;
+    transition-duration: 300ms;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.title-container
+{   
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
 }
 
 
@@ -97,10 +128,15 @@
 
 @media (min-width: 768px)
 {
+    .logo
+    {
+        opacity: 0.6;
+    }
     .logo-wrapper
     {
         height: 6rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
+        padding-top: 2rem;
     }
 
     .logo-circle
@@ -108,5 +144,13 @@
         padding: 1rem 0;
         border-radius: 2%;
     }
-    
+    .hero-title:hover
+    {
+        font-size: 2.5rem;
+        max-width: 425px;
+    }
+    .title-container
+    {
+        height: 7rem;
+    }
 }
