@@ -42,14 +42,14 @@
 
 
 <header>
-  <nav class="navbar">
-    <div class="brand">
+  <!--<nav class="navbar">
+    <div class="brand">-->
       <!--<img src="assets/img/logotransparente.png" alt="logopaideia"/>-->
-    </div>
+    <!--</div>
     <div class="actions">
       <img src="assets/icons/fa-bars-solid.svg" class="menu-bars" alt="boton de menu">
     </div>
-  </nav>
+  </nav>-->
 </header>
 
 <main>
@@ -65,8 +65,12 @@
     <div class="title-container">
       <h2 class="hero-title text-stylish">¿Sueñan las alumnas con novelas eléctricas?</h2>
     </div>
-  <div class="hero-content">  
-      <button>(spoiler: sí)</button>
+  <div class="hero-content">
+    <div class="dropdown">
+      <button onclick="spoilers()">spoilers</button>
+      <div class="spoilers" id="spoilers"></div>
+      
+      
     </div>
   </section>
 
@@ -243,6 +247,7 @@
 
     <p><div class="cajas caja3">caja 3</div></p>-->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
   
   </body>
 </html>

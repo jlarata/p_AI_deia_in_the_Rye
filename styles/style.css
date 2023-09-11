@@ -7,7 +7,7 @@
 @import url(hero.css);
 @import url(features.css);
 @import url(footer.css);
-@import url(flickity-pers.css)
+@import url(flickity-pers.css);
 /*@import url(carousel.css); no me gustó e resultado de esta opción. la comento y voy con otra*/
 
 
@@ -15,6 +15,7 @@
 
 /*ni font-face ni import funcionaron sin INSTALAR la font en la compu local... 
 ¿qué sucede si hosteo la web?*/
+
 @font-face {
   font-family: 'Pacifico';
   src: url('fonts/Pacifico-Regular.ttf') format ('truetype');
@@ -27,6 +28,14 @@
 {
   background-color: var(--primary-color);
 }
+
+.spoilers
+{
+  width: 80%;
+  text-align: justify;
+}
+
+
 
 .cajas
   {
@@ -77,3 +86,14 @@
 {
   border: solid 0.01px green;
 }*/
+
+@media (min-width: 768px)
+{
+  
+}
+
+@media (max-width: 768px)
+{
+  
+
+}
