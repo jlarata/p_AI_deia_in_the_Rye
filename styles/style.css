@@ -7,6 +7,10 @@
 @import url(hero.css);
 @import url(features.css);
 @import url(footer.css);
+@import url(flickity-pers.css)
+/*@import url(carousel.css); no me gustó e resultado de esta opción. la comento y voy con otra*/
+
+
 
 
 /*ni font-face ni import funcionaron sin INSTALAR la font en la compu local... 
