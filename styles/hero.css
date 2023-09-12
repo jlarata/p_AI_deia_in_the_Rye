@@ -192,10 +192,8 @@
         height: 7rem;
     }
     .dropdown > .spoilers
-{
-    
-    width: 600px;
-    background-color: rgba(15, 122, 15, 0.35);
-    
-}
+    {
+        width: 600px;
+        background-color: rgba(15, 122, 15, 0.35);
+    }
 }

@@ -10,9 +10,6 @@
 @import url(flickity-pers.css);
 /*@import url(carousel.css); no me gustó e resultado de esta opción. la comento y voy con otra*/
 
-
-
-
 /*ni font-face ni import funcionaron sin INSTALAR la font en la compu local... 
 ¿qué sucede si hosteo la web?*/
 
@@ -87,13 +84,3 @@
   border: solid 0.01px green;
 }*/
 
-@media (min-width: 768px)
-{
-  
-}
-
-@media (max-width: 768px)
-{
-  
-
-}
