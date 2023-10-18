@@ -1,0 +1,132 @@
+header {
+  margin-bottom: 2rem;
+}
+header .container {
+  background-image: url("../assets/imgs/bg.svg");
+  background-size: cover;
+}
+.header-social {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  align-self: start;
+}
+.logo {
+  width: 70%;
+  max-width: 350px;
+}
+.social {
+  display: inline-block;
+  right: 150px;
+}
+.social-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+  color: var(--color-primary);
+}
+.footer-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 0.8rem;
+}
+nav {
+  display: none;
+  padding: var(--metric-box-spacing);
+  border: 0;
+  padding-bottom: 6vh;
+  padding-top: 0;
+}
+nav ul li {
+  width: 100%;
+  display: block;
+  border: 0;
+  padding: 0;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+nav ul li a {
+  color: white;
+}
+/* nav {
+  padding: 1.5rem 0;
+  margin-bottom: 2rem;
+}
+nav ul li {
+  padding-right: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-right: 1px solid var(--color-primary);
+
+} */
+footer {
+  margin-top: 2rem;
+  padding: 4rem 0;
+}
+footer .container {
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-primary);
+  font-size: 0.9rem;
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--metric-box-spacing);
+}
+.card-novedades img {
+  aspect-ratio: 7/5;
+  object-fit: cover;
+}
+.egresados {
+  display: grid;
+  grid-template-columns: 20% 75%;
+  gap: var(--metric-box-spacing);
+}
+.egresados img,
+.novedades img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.novedades {
+  display: grid;
+  grid-template-columns: 28% 68%;
+  gap: var(--metric-box-spacing);
+}
+.contact {
+  margin-top: 2rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+input,
+textarea {
+  background-color: #eee;
+  height: 35px;
+  padding-left: 5px;
+  padding: 1rem;
+  font-family: inherit;
+}
+textarea {
+  height: auto;
+}
+.btn {
+  display: inline-block;
+  color: white;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--color-secondary);
+}
