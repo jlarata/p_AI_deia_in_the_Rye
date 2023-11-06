@@ -18,6 +18,7 @@
     
 }
 
+
 .logo 
 {
     width: 110px;
@@ -73,6 +74,17 @@
     justify-content: center;
     height: 6rem;
     margin-bottom: 2rem;
+}
+
+.about-container
+{   
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /*height: 6rem;
+    margin-bottom: 2rem;*/
 }
 
 
