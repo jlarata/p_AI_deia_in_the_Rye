@@ -37,7 +37,10 @@
   flex-direction: column;
 }
 
-
+.span{
+  font-size: larger;
+  font-style: italic;
+}
 
 .cajas
   {
