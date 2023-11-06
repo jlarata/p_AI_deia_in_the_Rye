@@ -28,8 +28,13 @@
 
 .spoilers
 {
-  width: 80%;
+  width: 90%;
   text-align: justify;
+}
+
+.bcscgptContainer{
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -76,7 +81,12 @@
   font-family: 'Pacifico', cursive;
 }
 
-
+/*boton para cerrar ventana chat con chat gpt*/
+.bcscgpt{
+  position: relative;
+  align-self: center;
+  justify-self: center;
+}
 
 /*ponerle borde a las cosas*/
 /*.navbar, .menu-bars, .cajas, .caja1, .caja2, .caja3, .logo-circle, .logo, .logo-wrapper, .hero, .copyright, .links, .footer, .left-floating, .right-floating
