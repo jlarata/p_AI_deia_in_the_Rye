@@ -99,9 +99,57 @@ function spoilers()
             buttonSpoilersChatGPT.innerHTML = '↓ conversación completa chat GPT ↓'
             spoilersChatBoolean = true;
         }
-
-        
+       
     }
+    
+audio01 = document.getElementById("audio01");
+let audio01Src = 'a';
+audio01.onended = function(){           
+    if(audio01Src == 'a'){
+        audio01Src = 'b';
+        audio01.src = "assets/audio/04 - texto_cita_en_el_terra_blues_parte_01.wav";
+        audio01.pause();
+        audio01.load();
+        audio01.play();
+        } else
+    if(audio01Src == 'b'){
+        audio01Src = 'c';
+        audio01.src = "assets/audio/04 - texto_cita_en_el_terra_blues_parte_02.wav";
+        audio01.pause();
+        audio01.load();
+        audio01.play();
+        }
+    };
+
+let audio02Src = 'a';
+audio02 = document.getElementById("audio02");
+audio02.onended = function(){
+    if(audio02Src == 'a'){
+        audio02Src = 'b';
+        audio02.src = "assets/audio/02 - texto_maldito_jorobado_en_bicicleta.wav";
+        audio02.pause();
+        audio02.load();
+        audio02.play();
+    }
+    else {
+        audio02Src = 'a'
+    }   
+};
+    
 
 
+let audio03Src = 'a';
+audio03 = document.getElementById("audio03");
+audio03.onended = function(){
+    if(audio03Src == 'a'){
+        audio03Src = 'b';
+        audio03.src = "assets/audio/03 - texto_el_partido_de_Allie.wav";
+        audio03.pause();
+        audio03.load();
+        audio03.play();
+    }
+    else {
+        audio03Src = 'a'
+    }   
+};
     
