@@ -18,7 +18,7 @@ function spoilers()
         {
             
             let explicacion =
-            " <p>\"¿Sueñan las alumnas con novelas eléctricas\" es un proyecto pedagógico y artístico"+
+            " <span style=\"font-style: italic; font-weight: bold;\"> \"¿Sueñan las alumnas con novelas eléctricas?\"</span> es un proyecto pedagógico y artístico"+
             " llevado a cabo por alumnas de segundo año del colegio paideia en el año 2023. El"+
             " objetivo es comparar y contastar de manera lúdica las estrategias literarias"+
             " estudiadas durante el año en curso contra las propias que utiliza el popular modelo de"+
@@ -28,7 +28,8 @@ function spoilers()
             ", en su novela <span style=\"font-style: italic; font-size: larger; font-weight: bold;\">The Catcher in the Rye</span>, tomando el modelo de traducción clásico de Carmen Criado.</p>"+
             " <p>Más abajo, en la sección documentación, se"+
             " puede acceder a la totalidad de la conversación con la AI, y se devela el nombre de las estudiantes"+
-            " que participaron.</p>"; 
+            " que participaron.</p>"+
+            "<div class=\"bcscgptContainer\"><button id=\"...\" type=\"button\" class=\"btn btn-outline-primary botoncitos bcscgpt\" onclick=\"spoilers()\">cerrar</button></div>"; 
         ventanaExplicativa.innerHTML = explicacion;
         botonSpoilers.innerHTML = '↑ cerrar ↑';
         explica = false;
@@ -89,7 +90,7 @@ function spoilers()
             "<li><h5>I apologize for any inconvenience, but currently, there isn't a way to download the entire chat conversation. However, you can copy and paste the conversation into a document or text file on your device to save it for future reference. If you have any specific questions or need assistance with anything else, please feel free to ask, and I'll be happy to help!</h5></li>"+
             "</ul>"+
             
-            "<div class=\"bcscgptContainer\"><button id=\"buttonCerrarSpoilersChatGPT\" type=\"button\" class=\"btn btn-outline-danger bcscgpt\" onclick=\"spoilersChatGPT()\">cerrar</button></div>"
+            "<div class=\"bcscgptContainer\"><button id=\"buttonCerrarSpoilersChatGPT\" type=\"button\" class=\"btn btn-outline-danger bcscgpt botoncitos\" onclick=\"spoilersChatGPT()\">cerrar</button></div>"
             ; 
             spoilersChatWindow.innerHTML = chatwithchat;
             buttonSpoilersChatGPT.innerHTML = '↑ cerrar ↑';
@@ -101,6 +102,38 @@ function spoilers()
         }
        
     }
+
+    function spoilersAutoras(){
+
+        let buttonSpoilerAutoras = document.getElementById("buttonSpoilerAutoras");
+        let spoilersAutorasWindow = document.getElementById("autoras");
+
+        if(talentosBoolean)
+        {
+            let autorasInfo =
+            "<ul class=\"autorasInfo\">"+
+            "<li><h5>Cita en el terra Blues</h5></li>"+
+            "<li>escrito por QOM</li>"+
+            "<li><h5>Maldito jorobado en bicicleta</h5></li>"+
+            "<li>escrito por Francisca Fábregas, Ana Samet y Francisca Luppi</li>"+
+            "<li><h5>Mr. Algo</h5></li>"+
+            "<li>escrito por Nina Fonteina, Teresa Olazarri y Olivia Rapoport</li>"+
+            "<li><h5>El Partido de Allie</h5></li>"+
+            "<li>escrito por chatGPT</li>"+
+            "</ul>"+
+            "<div class=\"bcscgptContainer\"><button id=\"buttonCerrarSpoilersAutoras\" type=\"button\" class=\"btn btn-outline-danger bcscgpt botoncitos\" onclick=\"spoilersAutoras()\">cerrar</button></div>"
+            ; 
+            spoilersAutorasWindow.innerHTML = autorasInfo;
+            buttonSpoilerAutoras.innerHTML = '↑ cerrar ↑';
+            talentosBoolean = false;
+        } else {
+            spoilersAutorasWindow.innerHTML = ""
+            buttonSpoilerAutoras.innerHTML = 'autoras'
+            talentosBoolean = true;
+        }
+    }
+       
+    
     
 audio01 = document.getElementById("audio01");
 let audio01Src = 'a';
