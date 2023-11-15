@@ -154,8 +154,8 @@ audio01.onended = function(){
         }
     };
 
-let audio02Src = 'a';
 audio02 = document.getElementById("audio02");
+let audio02Src = 'a';
 audio02.onended = function(){
     if(audio02Src == 'a'){
         audio02Src = 'b';
@@ -170,9 +170,8 @@ audio02.onended = function(){
 };
     
 
-
-let audio03Src = 'a';
 audio03 = document.getElementById("audio03");
+let audio03Src = 'a';
 audio03.onended = function(){
     if(audio03Src == 'a'){
         audio03Src = 'b';
@@ -184,10 +183,11 @@ audio03.onended = function(){
     else {
         audio03Src = 'a'
     }   
+}
 
-let audio04Src = 'a';
-    audio05 = document.getElementById("audio04");
-    audio05.onended = function(){
+audio05 = document.getElementById("audio05");
+let audio05Src = 'a';
+audio05.onended = function(){
         if(audio05Src == 'a'){
             audio05Src = 'b';
             audio05.src = "assets/audio/05 - texto_mr.Brown.wav";
@@ -199,4 +199,3 @@ let audio04Src = 'a';
             audio05Src = 'a'
         }
     }
-}
