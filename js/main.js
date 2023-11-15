@@ -116,10 +116,10 @@ function spoilers()
             "<li>escrito por QOM</li>"+
             "<li><h5>Maldito jorobado en bicicleta</h5></li>"+
             "<li>escrito por Francisca Fábregas, Ana Samet y Francisca Luppi</li>"+
-            "<li><h5>Mr. Algo</h5></li>"+
-            "<li>escrito por Nina Fonteina, Teresa Olazarri y Olivia Rapoport</li>"+
             "<li><h5>El Partido de Allie</h5></li>"+
             "<li>escrito por chatGPT</li>"+
+            "<li><h5>Mr. Brown</h5></li>"+
+            "<li>escrito por Nina Fonteina, Teresa Olazarri y Olivia Rapoport</li>"+
             "</ul>"+
             "<div class=\"bcscgptContainer\"><button id=\"buttonCerrarSpoilersAutoras\" type=\"button\" class=\"btn btn-outline-danger bcscgpt botoncitos\" onclick=\"spoilersAutoras()\">cerrar</button></div>"
             ; 
@@ -184,5 +184,19 @@ audio03.onended = function(){
     else {
         audio03Src = 'a'
     }   
-};
-    
+
+let audio04Src = 'a';
+    audio05 = document.getElementById("audio04");
+    audio05.onended = function(){
+        if(audio05Src == 'a'){
+            audio05Src = 'b';
+            audio05.src = "assets/audio/05 - texto_mr.Brown.wav";
+            audio05.pause();
+            audio05.load();
+            audio05.play();
+        }
+        else {
+            audio05Src = 'a'
+        }
+    }
+}
